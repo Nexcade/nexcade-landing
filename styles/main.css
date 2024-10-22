@@ -1,7 +1,7 @@
 :root {
-    --brand-green: #7FFFD4;
-    --brand-navy: #2A2D3E;
-    --dark-navy: #1A1D2E;
+     --brand-green: #7FFFD4;
+    --brand-navy: #2B2D3E;    /* Updated to match logo background */
+    --dark-navy: #262838;     /* Slightly darker version for gradient */
 }
 
 body {
