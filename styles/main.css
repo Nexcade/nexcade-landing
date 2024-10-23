@@ -19,13 +19,15 @@ body {
     background: linear-gradient(
         135deg,
         var(--darker-navy) 0%,
-        var(--dark-navy) 20%,
-        var(--deep-blue) 40%,
-        var(--midnight-blue) 60%,
-        var(--steel-blue) 80%,
+        var(--dark-navy) 15%,
+        var(--deep-blue) 30%,
+        var(--midnight-blue) 45%,
+        var(--steel-blue) 60%,
+        var(--dark-navy) 75%,
+        var(--darker-navy) 90%,
         var(--dark-navy) 100%
     );
-    background-size: 300% 300%;
+    background-size: 400% 400%;
     animation: gradientFlow 15s linear infinite;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--brand-green);
@@ -57,7 +59,7 @@ body::before {
         background-position: 0% 50%;
     }
     100% {
-        background-position: 300% 50%;
+        background-position: 100% 50%;
     }
 }
 
