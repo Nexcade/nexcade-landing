@@ -4,6 +4,8 @@
     --dark-navy: #232947;     /* Slightly darker version for gradient */
     --darker-navy: #1A1F35;  /* New color for darker gradient */
     --deep-blue: #2C3E50;    /* New color for gradient variety */
+    --midnight-blue: #145374;  /* New color for more contrast */
+    --steel-blue: #4682B4;     /* New color for subtle highlight */
 }
 
 body {
@@ -17,13 +19,14 @@ body {
     background: linear-gradient(
         135deg,
         var(--darker-navy) 0%,
-        var(--dark-navy) 25%,
-        var(--deep-blue) 50%,
-        var(--dark-navy) 75%,
-        var(--darker-navy) 100%
+        var(--dark-navy) 20%,
+        var(--deep-blue) 40%,
+        var(--midnight-blue) 60%,
+        var(--steel-blue) 80%,
+        var(--dark-navy) 100%
     );
-    background-size: 400% 400%;
-    animation: gradientFlow 30s ease infinite;
+    background-size: 300% 300%;
+    animation: gradientFlow 15s linear infinite;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--brand-green);
     text-align: center;
@@ -53,11 +56,8 @@ body::before {
     0% {
         background-position: 0% 50%;
     }
-    50% {
-        background-position: 100% 50%;
-    }
     100% {
-        background-position: 0% 50%;
+        background-position: 300% 50%;
     }
 }
 
