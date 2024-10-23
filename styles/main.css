@@ -2,6 +2,8 @@
      --brand-green: #7FFFD4;
     --brand-navy: #444A6A;    /* Updated to match logo background */
     --dark-navy: #232947;     /* Slightly darker version for gradient */
+    --darker-navy: #1A1F35;  /* New color for darker gradient */
+    --deep-blue: #2C3E50;    /* New color for gradient variety */
 }
 
 body {
@@ -14,14 +16,14 @@ body {
     align-items: center;
     background: linear-gradient(
         135deg,
-        var(--dark-navy) 0%,
-        var(--brand-navy) 25%,
-        var(--brand-green) 50%,
-        var(--brand-navy) 75%,
-        var(--dark-navy) 100%
+        var(--darker-navy) 0%,
+        var(--dark-navy) 25%,
+        var(--deep-blue) 50%,
+        var(--dark-navy) 75%,
+        var(--darker-navy) 100%
     );
     background-size: 400% 400%;
-    animation: gradientFlow 20s ease infinite;
+    animation: gradientFlow 30s ease infinite;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--brand-green);
     text-align: center;
