@@ -83,6 +83,8 @@ body::before {
     min-height: 80vh;
     position: relative;
     z-index: 1;
+    align-items: center;
+    text-align: center;
 }
 
 .main-content {
@@ -153,7 +155,8 @@ a:hover {
 @media (max-width: 600px) {
     .container {
         padding: 20px; /* Adds padding for smaller screens */
-        text-align: center; /* Centers content */
+        width: 100%; /* Ensures the container takes full width */
+        box-sizing: border-box; /* Includes padding in width calculation */
     }
     .logo {
         width: 80%; /* Ensures the logo scales down on smaller screens */
