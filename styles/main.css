@@ -165,6 +165,6 @@ a:hover {
         max-width: 300px; /* Maintains maximum width */
     }
     h1 {
-        font-size: 5vw; /* Adjusts heading size to fit the screen */
+        font-size: 1.0rem; /* Adjusts heading size to fit the screen */
     }
 }
