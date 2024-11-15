@@ -114,13 +114,16 @@ body::before {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;  /* Made smaller, adjust this size as needed */
+    font-size: 1.8rem;  /* Original size */
     margin-bottom: 1rem;
     font-weight: 500;
     color: var(--brand-green);
     text-shadow: 0 0 10px rgba(127, 255, 212, 0.3);
     letter-spacing: 2px;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis if text overflows */
 }
 
 h1:hover {
@@ -149,14 +152,14 @@ a:hover {
 
 @media (max-width: 600px) {
     .container {
-        padding: 20px;
-        text-align: center;
+        padding: 20px; /* Adds padding for smaller screens */
+        text-align: center; /* Centers content */
     }
     .logo {
-        width: 80%;
-        max-width: 300px;
+        width: 80%; /* Ensures the logo scales down on smaller screens */
+        max-width: 300px; /* Maintains maximum width */
     }
     h1 {
-        font-size: 2em;
+        font-size: 5vw; /* Adjusts heading size to fit the screen */
     }
 }
