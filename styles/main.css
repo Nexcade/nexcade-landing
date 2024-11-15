@@ -148,8 +148,15 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
     .logo {
         width: 80%;
         max-width: 300px;
+    }
+    h1 {
+        font-size: 2em;
     }
 }
