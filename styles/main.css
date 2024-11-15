@@ -76,16 +76,15 @@ body::before {
 }
 
 .container {
-    padding: 2rem;
+    padding: 20px;
     max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
-    position: relative;
-    z-index: 1;
     align-items: center;
     text-align: center;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .main-content {
@@ -96,7 +95,7 @@ body::before {
 }
 
 .logo {
-    width: 400px;
+    max-width: 100%;
     height: auto;
     margin: 0 auto 3rem;
     filter: drop-shadow(0 0 20px rgba(127, 255, 212, 0.2));
@@ -117,7 +116,7 @@ body::before {
 
 h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;  /* Original size */
+    font-size: 2em;
     margin-bottom: 1rem;
     font-weight: 500;
     color: var(--brand-green);
@@ -154,17 +153,12 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 20px; /* Adds padding for smaller screens */
-        width: 100%; /* Ensures the container takes full width */
-        box-sizing: border-box; /* Includes padding in width calculation */
-        margin: 0 auto;
-    }
-    .logo {
-        width: 80%; /* Ensures the logo scales down on smaller screens */
-        max-width: 300px; /* Maintains maximum width */
-    }
     h1 {
-        font-size: 5vw; /* Adjusts heading size to fit the screen */
+        font-size: 5vw;
+    }
+    .container {
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
